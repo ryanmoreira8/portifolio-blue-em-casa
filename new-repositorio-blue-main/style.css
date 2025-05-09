@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';                                   
+    
+}
+
+html body{
+    /* Gradiente linear de azul escuro para azul claro */
+background: linear-gradient(135deg, #0000FF 0%, #236690 100%);
+
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    background: #66b2ff;
+    color: white
+}
+
+header{
+   
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 90px;
+}
+
+
+
+nav{
+    width: 100%;
+    background-color: blue;
+
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-around;
+    padding: 2px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav h1{
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+nav button{
+    padding: 10px;
+    background-color: blue;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    
+    border-radius: 20px;
+}
+
+nav button:hover{
+    color:  white;
+    background-color: #66b3ffc7;
+    transition: transform 4s;
+    
+}
+
+nav ul{
+    
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+.sobre-mim{
+    
+    font-size: 30px;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-mim img{
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 900px;
+    transition: 1s;
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-mim img:hover{
+    transition: 1s;
+    transform: scale(0.9);
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.947);
+}
+
+.sobre-mim h2{
+    margin: auto;
+    font-weight:700;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.sobre-mim p{
+    font-size: 35px;
+    line-height: 40px;
+    
+    padding: 20px;
+    
+    width: auto;
+    margin: auto;
+    color: white;
+    border-radius: 20px;
+    
+    
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.habilidades h2{
+    padding-top: 90px;
+    font-size: 60px;
+    color: rgb(241, 185, 0);
+    text-align: center;
+}
+.habilidades ul{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    
+    align-items: center;
+    list-style: none;
+}
+
+.habilidades ul img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+    
+    
+    border-radius: 20px; 
+    width: 300px;
+    transition: 2s;
+    
+}
+
+.habilidades ul #html{
+    
+    transition: 2.5s;
+}
+.habilidades ul #html:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    border-radius: 20px; 
+    box-shadow: 10px 10px 50px #E7481E;
+    margin-left: 50px;
+}
+
+.habilidades ul #css{
+    transition: 2.5s;
+}
+
+   
+.habilidades ul #css:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px #83b5ff;
+}
+
+.habilidades ul #js{
+
+    transition: 2.5s;
+}
+.habilidades ul #js:hover{
+    transition: 1s;
+    margin-right: 50px;
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px #ffe418;
+}
+
+.github{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    width: 100%;
+    
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+.github img{
+    
+    transition: 2.5s;   
+
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 235px;
+}
+
+.github img:hover{
+    transition: 1s;
+    
+    transform: scale(1.1);  
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px #000000;
+}
+
+.github a{
+    font-weight: 900;
+    color: yellow;
+    padding-left: 90px;
+    text-decoration: none;
+    font-size: 150px;
+    transition: 2s;
+}
+
+.github a:hover{
+    color: #000000;
+    transition: 1s;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}   
+
+
+
+
+
+
+
